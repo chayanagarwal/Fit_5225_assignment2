@@ -21,8 +21,7 @@ Somya Milendra Saxena - 30469406
 
 
 AWS Architecture:
-![image](https://user-images.githubusercontent.com/12700091/127231665-b6b540ce-3c3d-4778-b5e6-e9c182a84f71.png)
-
+![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/aws_architecture.jpg)
 
 Backend:
 For this application we are using S3 buckets to store the assets like the images uploaded by the users and to store the static files of the website to be hosted. To authenticate the users we created a User Pool which lets us store the user details like email, first name, last name, etc. and manages that data for us. Cognito also provides a mechanism to sign up and login users and provides different ways to activate their accounts. We used email verification of Cognito to let users verify their email to gain access to our services. For authorization we are using Cognito Identity Pool which has roles and policies for authenticated users attached to it. IAM policies are used to provide fine grained access to the AWS resources so that they can access the other AWS resources as needed. For example, each of the Lambda functions have an IAM role and a policy attached to them which allows them to access either the S3 bucket or the DynamoDB table. Data for tags like the tag detected the URL associated with it is being stored in a DynamoDB table with the tag as the partition key. To expose our services outside the AWS account we are using the API Gateway which lets us create resources which can be attached to our services. Different HTTP methods like GET, POST can be created for each of the resources and the requests arriving on those methods can be forwarded to the respective AWS resources. For example, we created a resource named tag and created a POST method on it and the requests arriving on that method are redirected to the Lambda function which stores the images.
@@ -40,7 +39,7 @@ Steps for Registration:
 Step 1: Click on the “Register” button available on the top right corner of the screen.
  
  
- ![image](https://user-images.githubusercontent.com/12700091/127232194-99610fb4-7438-4459-a4dd-f4dc25b394d9.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/registration.png)
 
 Fig 1. Registration
 
@@ -49,7 +48,7 @@ Step 2: Provide the details such as First Name, Last Name, email id, password an
 Step 3: Open account of the email address provided. Open the email from “Your verification link” and click on the hypertext “Verify Email” to verify the email address provided.
 
 
- ![image](https://user-images.githubusercontent.com/12700091/127232219-89143013-362b-4bbe-b155-f4a956b392f8.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/regconfirmation.png)
 Fig 2: Registration Confirmation
 
 Steps for Login:
@@ -58,13 +57,13 @@ Option1: Login by providing credentials.
 
 Provide the username and password and click the “Sign in” button.
 
- ![image](https://user-images.githubusercontent.com/12700091/127232271-2be0582f-c31b-4fa8-a008-20b7cfe0207b.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/loginnormal.png)
 Fig 3: Sign-in with Email Id and password 
 
 Option 2: Login with google.
 Click on the “Google” button and select the email id.
 
- ![image](https://user-images.githubusercontent.com/12700091/127232286-9fb9c840-bb6f-4a35-92c1-b55e4e8a9ef1.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/logingoogle.png)
 Fig 4. Sign-in with google option
 
 Steps to Upload image:
@@ -75,7 +74,7 @@ Steps to Upload image:
 
 Step 1: Select the option “Upload Image”. Click on the button labelled “Drag 'n' drop your file here or click to select a file”.
 
- ![image](https://user-images.githubusercontent.com/12700091/127232399-b520ef22-a90e-4e97-8917-75d3c249e588.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/uploadimage.png)
 Fig 5. Upload Image
 
 Steps to Query tag:
@@ -84,10 +83,10 @@ Step 1: Select the option “Query Tag” from the navigation menu.
 
 Step 2: Enter the tag to search and click on the “Search” button. The image of the entered tag will be displayed.
 
- ![image](https://user-images.githubusercontent.com/12700091/127232409-f507c6ec-0a24-4e47-9fc6-5976165c206a.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/entertag.png)
 Fig 6. Enter tag
 
- ![image](https://user-images.githubusercontent.com/12700091/127232423-ce6b65e3-37a9-4bc9-becb-85231bd21a91.png)
+ ![alt text](https://github.com/chayanagarwal/Fit_5225_assignment2/blob/main/imageshown.png)
 Fig 7. Image Received 
 
 
