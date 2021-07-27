@@ -1,0 +1,64 @@
+// Core
+
+@import "tag-store-dashboard/custom/functions";
+@import "tag-store-dashboard/custom/variables";
+@import "tag-store-dashboard/custom/mixins";
+
+// bootstrap (4.3.1) components
+
+@import "tag-store-dashboard/bootstrap/root";
+@import "tag-store-dashboard/bootstrap/reboot";
+@import "tag-store-dashboard/bootstrap/type";
+@import "tag-store-dashboard/bootstrap/images";
+@import "tag-store-dashboard/bootstrap/code";
+@import "tag-store-dashboard/bootstrap/grid";
+@import "tag-store-dashboard/bootstrap/tables";
+@import "tag-store-dashboard/bootstrap/forms";
+@import "tag-store-dashboard/bootstrap/buttons";
+@import "tag-store-dashboard/bootstrap/transitions";
+@import "tag-store-dashboard/bootstrap/dropdown";
+@import "tag-store-dashboard/bootstrap/button-group";
+@import "tag-store-dashboard/bootstrap/input-group";
+@import "tag-store-dashboard/bootstrap/custom-forms";
+@import "tag-store-dashboard/bootstrap/nav";
+@import "tag-store-dashboard/bootstrap/navbar";
+@import "tag-store-dashboard/bootstrap/card";
+@import "tag-store-dashboard/bootstrap/breadcrumb";
+@import "tag-store-dashboard/bootstrap/pagination";
+@import "tag-store-dashboard/bootstrap/badge";
+@import "tag-store-dashboard/bootstrap/jumbotron";
+@import "tag-store-dashboard/bootstrap/alert";
+@import "tag-store-dashboard/bootstrap/progress";
+@import "tag-store-dashboard/bootstrap/media";
+@import "tag-store-dashboard/bootstrap/list-group";
+@import "tag-store-dashboard/bootstrap/close";
+@import "tag-store-dashboard/bootstrap/modal";
+@import "tag-store-dashboard/bootstrap/tooltip";
+@import "tag-store-dashboard/bootstrap/popover";
+@import "tag-store-dashboard/bootstrap/carousel";
+@import "tag-store-dashboard/bootstrap/utilities";
+@import "tag-store-dashboard/bootstrap/print";
+
+// tag-store utilities and components
+
+@import "tag-store-dashboard/custom/reboot";
+@import "tag-store-dashboard/custom/utilities";
+@import "tag-store-dashboard/custom/components";
+
+// Vendor (Plugins)
+
+@import "tag-store-dashboard/custom/vendors";
+
+// Docs components
+
+@import "tag-store-dashboard/docs/variables";
+@import "tag-store-dashboard/docs/nav";
+@import "tag-store-dashboard/docs/clipboard-js";
+@import "tag-store-dashboard/docs/component-examples";
+@import "tag-store-dashboard/docs/prism";
+@import "tag-store-dashboard/docs/content";
+@import "tag-store-dashboard/docs/sidebar";
+@import "tag-store-dashboard/docs/footer";
+
+// React Differences
+@import "react/react-differences";

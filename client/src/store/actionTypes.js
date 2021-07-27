@@ -1,0 +1,2 @@
+export const SET_USER_AUTH_DATA = 'SET_USER_AUTH_DATA'
+export const SET_IMAGE_URLS = 'SET_IMAGE_URLS'
