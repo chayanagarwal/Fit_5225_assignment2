@@ -1,6 +1,8 @@
 # Fit_5225_assignment2
 Getting from college profile to personal profile
+
 ### Tag Storage and Retrieval
+the following api are down now sorry...
 
 #### API URL:- https://5f8hfugv1m.execute-api.us-east-1.amazonaws.com/prod
 #### Image upload URL:- https://5f8hfugv1m.execute-api.us-east-1.amazonaws.com/prod/tag POST
